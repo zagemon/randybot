@@ -16,7 +16,7 @@ bot.on('ready', () => {
     console.log('Bot Ready!');
 });
 
-bot.login('');
+bot.login(process.env.TOKEN);
 
 bot.on('message', message => {
     if (message.content === prefix + "help"){
