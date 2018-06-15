@@ -16,7 +16,7 @@ bot.on('ready', () => {
     console.log('Bot Ready!');
 });
 
-bot.login('NDU2OTM5MTYzNTczNTUxMTA1.DgR1XQ.2Wcd2v9RVs1Awse_YK-LnxBinL0');
+bot.login('');
 
 bot.on('message', message => {
     if (message.content === prefix + "help"){
