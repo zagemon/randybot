@@ -20,7 +20,7 @@ bot.login(process.env.TOKEN);
 
 bot.on('message', message => {
     if (message.content === prefix + "help"){
-        message.channel.sendMessage("voici les commandes fdp(sauf bruno psk c'est un bg) :\n !fromage 1 (permet de rire a vos blagues le plus drôles si vous n'avez pas d'amis) \n !pd (fait fuire randy comme l'homophobe qu'il est) \n !flanc (pour avoir le meilleur flanc de votre région) ")
+        message.channel.sendMessage("voici les commandes fdp(sauf bruno psk c'est un bg) :\n !fromage 1 (permet de rire a vos blagues le plus drôles si vous n'avez pas d'amis) \n !pd (fait fuire randy comme l'homophobe qu'il est) \n !flanc (pour avoir le meilleur flanc de votre région) \n /pigeon pour les amateurs de cosmétique ")
         console.log("Commande Help demandée !");
     
     }
@@ -57,6 +57,15 @@ bot.on('message', message => {
     
     if (message.content === prefix + "flanc")
      message.channel.send ("Au 06 19 19 19 19", {files: ['./qsfqsdf.JPG']});
+    
+    if (message.content === prefix + "pigeon")
+     message.channel.send  ("~rouuu rouuu~", {files: ['./randy pigeon.png']});
+
+   
+    if (message.content === prefix + "pigeon")
+    message.member.voiceChannel.join().then(connection => {
+        dispatcher = connection.playFile('./rourou.mp3')
+    });
     
 
 });
