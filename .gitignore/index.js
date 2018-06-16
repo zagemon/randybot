@@ -55,9 +55,8 @@ bot.on('message', message => {
     if (message.content === prefix + "pd")    
      message.member.voiceChannel.leave();
     
-    if (message.content.startsWith ("flanc"){
-    message.channel.send ("Au 06 19 19 19 19", {files: ['./qsfqsdf.JPG']});
-    }
+    if (message.content === prefix + "flanc")
+     message.channel.send ("Au 06 19 19 19 19", {files: ['./qsfqsdf.JPG']});
     
 
 });
